@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "imageUrl": "https://iili.io/Hkeb8ap.png",
+      "title": "Software Engineer",
+      "companyName": "Google Inc.",
+      "jobType": "On-site",
+      "type":"full-time",
+      "location": "San Francisco, CA",
+      "salary": "$100,000 - $120,000"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://iili.io/Hkebrut.png",
+      "title": "Marketing Manager",
+      "companyName": "Netflix.",
+      "jobType": "On-site",
+      "type":"full-time",
+      "location": "New York, NY",
+      "salary": "$80,000 - $100,000"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://iili.io/HkemZWg.png",
+      "title": "Data Scientist",
+      "companyName": "Tesla Co.",
+      "jobType": "Remote",
+      "type":"full-time",
+      "location": "Seattle, WA",
+      "salary": "$120,000 - $150,000"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://iili.io/Hkebrut.png",
+      "title": "Graphic Designer",
+      "companyName": "GHI Agency",
+      "jobType": "Remote",
+      "type":"full-time",
+      "location": "Los Angeles, CA",
+      "salary": "$60,000 - $80,000"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://iili.io/Hkeb8ap.png",
+      "title": "Human Resources Manager",
+      "companyName": "Google Inc.",
+      "jobType": "Remote",
+      "type":"full-time",
+      "location": "Chicago, IL",
+      "salary": "$90,000 - $110,000"
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://iili.io/Hkebrut.png",
+      "title": "Accountant",
+      "companyName": "Netflix",
+      "jobType": "On-site",
+      "type":"full-time",
+      "location": "Dallas, TX",
+      "salary": "$50,000 - $70,000"
+    }
+  ]
+  

@@ -7,17 +7,23 @@ const Home = () => {
     const detailsHandler = (id)=>{
         console.log(id,'clicked handle')
     }
-    const featuredJobs = useLoaderData()
+    // const featuredJobs = useLoaderData()
     const [jobs,setJobs] = useState([])
-    // const [featuredJobs,setFeaturedJobs] = useState([])
+    const [featuredJobs,setFeaturedJobs] = useState([])
     const [all,setAll] = useState(false)
     
     console.log(featuredJobs)
     useEffect(()=>{
-        fetch('./../../../public/jobCategoryLists.json')
+        fetch('/public/jobCategoryLists.json')
         .then(res=>res.json())
         .then(data=> setJobs(data))
     },[])
+    useEffect(()=>{
+        fetch('/public/data.json')
+        .then(res=>res.json())
+        .then(data=> setFeaturedJobs(data))
+    },[])
+
     const seeAll = () =>{
         setAll(!all)
         console.log(all)
@@ -51,7 +57,7 @@ const Home = () => {
                 {/* job lists */}
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-20 w-3/4 mx-auto'>
                 {
-                    jobs.map(data => <JobLists data={data} key={data.id}></JobLists>)
+                    jobs?.map(data => <JobLists data={data} key={data.id}></JobLists>)
                 }
                 </div>
             </section>
@@ -65,7 +71,7 @@ const Home = () => {
                 {/* data */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-3/4 mx-auto mt-24'>
                     {
-                     featuredJobs.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>)
+                     featuredJobs?.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>)
                     }
                 </div>
                 {/* see all */}
