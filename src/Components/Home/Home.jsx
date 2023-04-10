@@ -17,6 +17,14 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            {/* job category lists */}
+            <section className='mt-24'>
+                <div className='space-y-4'>
+                    <h1 className='text-3xl text-center font-semibold'>Job Category List</h1>
+                    <p className='text-center mx-auto w-3/6'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                </div>
+            </section>
         </div>
     );
 };
