@@ -1,0 +1,14 @@
+{
+    "id": 3,
+    "jobDescription": "As a data scientist, you will be responsible for analyzing and interpreting complex data sets to provide insights and recommendations to stakeholders. You will work closely with a team of analysts to identify trends and patterns in data.",
+    "jobResponsibilities": [
+      "Analyze and interpret complex data sets",
+      "Provide insights and recommendations to stakeholders",
+      "Identify trends and patterns in data"
+    ],
+    "educationalRequirements": "Master's degree in Data Science or related field",
+    "experiences": "5+ years of experience in data science",
+    "phone": "(123) 456-7890",
+    "email": "jobs@defco.com",
+    "address": "789 Maple Street, Seattle, WA"
+  }

@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "jobDescription": "As a software engineer, you will be responsible for developing and maintaining software applications. You will work closely with a team of developers to design, code, and test new software features.",
+    "jobResponsibilities": [
+      "Develop and maintain software applications",
+      "Design, code, and test new software features",
+      "Collaborate with a team of developers"
+    ],
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in software engineering",
+    "phone": "(123) 456-7890",
+    "email": "jobs@abcinc.com",
+    "address": "123 Main Street, San Francisco, CA"
+  }
