@@ -1,55 +1,61 @@
 [
     {
       "id": 1,
-      "imageUrl": "https://example.com/images/job1.png",
+      "imageUrl": "https://iili.io/Hkeb8ap.png",
       "title": "Software Engineer",
-      "companyName": "ABC Inc.",
-      "jobType": "Full-time",
+      "companyName": "Google Inc.",
+      "jobType": "On-site",
+      "type":"full-time",
       "location": "San Francisco, CA",
       "salary": "$100,000 - $120,000"
     },
     {
       "id": 2,
-      "imageUrl": "https://example.com/images/job2.png",
+      "imageUrl": "https://iili.io/Hkebrut.png",
       "title": "Marketing Manager",
-      "companyName": "XYZ Corp.",
-      "jobType": "Part-time",
+      "companyName": "Netflix.",
+      "jobType": "On-site",
+      "type":"full-time",
       "location": "New York, NY",
       "salary": "$80,000 - $100,000"
     },
     {
       "id": 3,
-      "imageUrl": "https://example.com/images/job3.png",
+      "imageUrl": "https://iili.io/HkemZWg.png",
       "title": "Data Scientist",
-      "companyName": "DEF Co.",
-      "jobType": "Full-time",
+      "companyName": "Tesla Co.",
+      "jobType": "Remote",
+      "type":"full-time",
       "location": "Seattle, WA",
       "salary": "$120,000 - $150,000"
     },
     {
       "id": 4,
-      "imageUrl": "https://example.com/images/job4.png",
+      "imageUrl": "https://iili.io/Hkebrut.png",
       "title": "Graphic Designer",
       "companyName": "GHI Agency",
-      "jobType": "Contract",
+      "jobType": "Remote",
+      "type":"full-time",
       "location": "Los Angeles, CA",
       "salary": "$60,000 - $80,000"
     },
     {
       "id": 5,
-      "imageUrl": "https://example.com/images/job5.png",
+      "imageUrl": "https://iili.io/Hkeb8ap.png",
       "title": "Human Resources Manager",
-      "companyName": "JKL Inc.",
-      "jobType": "Full-time",
+      "companyName": "Google Inc.",
+      "jobType": "Remote",
+      "type":"full-time",
       "location": "Chicago, IL",
       "salary": "$90,000 - $110,000"
     },
     {
       "id": 6,
-      "imageUrl": "https://example.com/images/job6.png",
+      "imageUrl": "https://iili.io/Hkebrut.png",
       "title": "Accountant",
-      "companyName": "MNO Co.",
-      "jobType": "Part-time",
+      "companyName": "Netflix",
+      "jobType": "On-site",
+      "type":"full-time",
       "location": "Dallas, TX",
       "salary": "$50,000 - $70,000"
     }
