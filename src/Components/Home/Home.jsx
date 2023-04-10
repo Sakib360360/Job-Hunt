@@ -6,16 +6,21 @@ import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 const Home = () => {
     const [jobs,setJobs] = useState([])
     const [featuredJobs,setFeaturedJobs] = useState([])
+    // const [all,setAll] = useState(false)
+    const splicedJobs = featuredJobs.splice(0,4)
     useEffect(()=>{
         fetch('https://raw.githubusercontent.com/Porgramming-Hero-web-course/b7a9-career-hub-Sakib360360/main/public/jobCategoryLists.json?token=GHSAT0AAAAAAB4VAMDO5CCOOSA7UGY5RHYGZBT5FAQ')
         .then(res=>res.json())
         .then(data=> setJobs(data))
     },[])
     useEffect(()=>{
-        fetch('https://raw.githubusercontent.com/Porgramming-Hero-web-course/b7a9-career-hub-Sakib360360/main/public/data.json?token=GHSAT0AAAAAAB4VAMDOYOTKOIZF6BUKRRXEZBT5KIQ')
+        fetch('./../../../public/data.json')
         .then(res=>res.json())
         .then(data=> setFeaturedJobs(data))
     },[])
+    const seeAll = () =>{
+        console.log('clicked')
+    }
     console.log(featuredJobs)
     return (
         <div>
@@ -57,8 +62,12 @@ const Home = () => {
                 {/* data */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-3/4 mx-auto mt-24'>
                     {
-                        featuredJobs.map(data=><FeaturedJobs data={data} key={data.id}></FeaturedJobs>)
+                        splicedJobs.map(data=><FeaturedJobs data={data} key={data.id}></FeaturedJobs>)
                     }
+                </div>
+                {/* see all */}
+                <div className='flex flex-col items-center'>
+                <button onClick={()=>seeAll()} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button>
                 </div>
             </section>
         </div>
