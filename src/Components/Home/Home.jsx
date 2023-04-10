@@ -1,6 +1,10 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import JobLists from '../JobLists/JobLists';
 
 const Home = () => {
+    const jobLists = useLoaderData()
+    console.log(jobLists)
     return (
         <div>
             <div className='bg-[#7e8ffe18]'>
@@ -20,9 +24,15 @@ const Home = () => {
 
             {/* job category lists */}
             <section className='mt-24'>
-                <div className='space-y-4'>
+                <div className='space-y-4 mb-8'>
                     <h1 className='text-3xl text-center font-semibold'>Job Category List</h1>
                     <p className='text-center mx-auto w-3/6'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                </div>
+                {/* job lists */}
+                <div className='grid grid-cols-2 md:grid-cols-4 gap-20 w-3/4 mx-auto'>
+                {
+                    jobLists.map(data => <JobLists data={data} key={data.id}></JobLists>)
+                }
                 </div>
             </section>
         </div>
