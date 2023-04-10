@@ -10,5 +10,9 @@
     "experiences": "3+ years of experience in software engineering",
     "phone": "(123) 456-7890",
     "email": "jobs@abcinc.com",
-    "address": "123 Main Street, San Francisco, CA"
+    "address": "123 Main Street, San Francisco, CA",
+    "title": "Software Engineer",
+      
+      "location": "San Francisco, CA",
+      "salary": "$100,000 - $120,000"
   }

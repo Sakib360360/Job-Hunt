@@ -11,5 +11,11 @@
     "experiences": "5+ years of experience in human resources",
     "phone": "(123) 456-7890",
     "email": "jobs@defco.com",
-    "address": "789 Maple Street, Seattle, WA"
+    "address": "789 Maple Street, Seattle, WA",
+    "title": "Human Resources Manager",
+      "companyName": "Google Inc.",
+      "jobType": "Remote",
+      "type":"full-time",
+      "location": "Chicago, IL",
+      "salary": "$90,000 - $110,000"
   }

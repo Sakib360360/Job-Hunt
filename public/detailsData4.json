@@ -10,5 +10,11 @@
     "experiences": "3+ years of experience in graphic design",
     "phone": "(123) 456-7890",
     "email": "jobs@ghiagency.com",
-    "address": "1010 Oak Street, Los Angeles, CA"
+    "address": "1010 Oak Street, Los Angeles, CA",
+    "title": "Graphic Designer",
+      "companyName": "GHI Agency",
+      "jobType": "Remote",
+      "type":"full-time",
+      "location": "Los Angeles, CA",
+      "salary": "$60,000 - $80,000"
   }

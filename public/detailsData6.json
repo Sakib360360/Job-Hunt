@@ -11,5 +11,11 @@
     "experiences": "3+ years of experience in accounting",
     "phone": "(123) 456-7890",
     "email": "jobs@abcinc.com",
-    "address": "123 Main Street, Anytown, USA"
+    "address": "123 Main Street, Anytown, USA",
+    "title": "Accountant",
+      "companyName": "Netflix",
+      "jobType": "On-site",
+      "type":"full-time",
+      "location": "Dallas, TX",
+      "salary": "$50,000 - $70,000"
   }

@@ -37,7 +37,7 @@ const Home = () => {
                     </div>
                     {/* right side */}
                     <div className='w-full md:w-3/6'>
-                        <img src="./../../../src/new assests/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+                    <img src="https://i.ibb.co/TWJv5t3/P3-OLGJ1-copy-1.png" alt="P3-OLGJ1-copy-1" border="0" />
                     </div>
                 </div>
             </div>

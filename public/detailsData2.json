@@ -10,5 +10,11 @@
     "experiences": "5+ years of experience in marketing",
     "phone": "(123) 456-7890",
     "email": "jobs@xyzcorp.com",
-    "address": "456 Elm Street, New York, NY"
+    "address": "456 Elm Street, New York, NY",
+    "title": "Marketing Manager",
+      "companyName": "Netflix.",
+      "jobType": "On-site",
+      "type":"full-time",
+      "location": "New York, NY",
+      "salary": "$80,000 - $100,000"
   }

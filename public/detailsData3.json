@@ -10,5 +10,11 @@
     "experiences": "5+ years of experience in data science",
     "phone": "(123) 456-7890",
     "email": "jobs@defco.com",
-    "address": "789 Maple Street, Seattle, WA"
+    "address": "789 Maple Street, Seattle, WA",
+    "title": "Data Scientist",
+      "companyName": "Tesla Co.",
+      "jobType": "Remote",
+      "type":"full-time",
+      "location": "Seattle, WA",
+      "salary": "$120,000 - $150,000"
   }
