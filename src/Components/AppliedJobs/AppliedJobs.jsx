@@ -17,10 +17,16 @@ const AppliedJobs = () => {
     // const filteredData = getData.filter(f => f.id === )
     return (
         <div className='mx-auto w-3/4 py-12'>
-            jb applied{data.jobDescription}
-            <div className='space-y-8'>
+            <div className=''>
             {
-                storedData.map(d =><p>{d.jobDescription}</p>)
+                storedData.map(d =><div className='space-y-8 border-gray-500 rounded border'>
+                    {/* left */}
+                    <div>
+                        <img src="" alt="" />
+                    </div>
+                    {d.jobDescription}
+                    
+                    </div>)
             }
             </div>
         </div>
