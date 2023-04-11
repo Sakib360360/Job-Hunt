@@ -1,31 +1,35 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import JobLists from '../JobLists/JobLists';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 const Home = () => {
+    const jobApply = () =>{
+        console.log('applied')
+    }
+    const [all,setAll] = useState('')
     const detailsHandler = (id)=>{
         console.log(id,'clicked handle')
     }
     // const featuredJobs = useLoaderData()
     const [jobs,setJobs] = useState([])
     const [featuredJobs,setFeaturedJobs] = useState([])
-    const [all,setAll] = useState(false)
+    
     
     console.log(featuredJobs)
     useEffect(()=>{
-        fetch('/public/jobCategoryLists.json')
+        fetch('jobCategoryLists.json')
         .then(res=>res.json())
         .then(data=> setJobs(data))
     },[])
     useEffect(()=>{
-        fetch('/public/data.json')
+        fetch('data.json')
         .then(res=>res.json())
         .then(data=> setFeaturedJobs(data))
     },[])
 
     const seeAll = () =>{
-        setAll(!all)
+        
+        setAll('true')
         console.log(all)
     }
     // details handler
@@ -71,12 +75,15 @@ const Home = () => {
                 {/* data */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-3/4 mx-auto mt-24'>
                     {
-                     featuredJobs?.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>)
+                     all === 'true' ?featuredJobs?.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) : featuredJobs?.splice(0,4).map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) 
                     }
                 </div>
                 {/* see all */}
                 <div className='flex flex-col items-center'>
-                <button  className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button>
+                {
+                     all === 'true' ? console.log('true') : <button onClick={seeAll} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button> 
+                    }
+                {/* <button onClick={()=>seeAll()} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button> */}
                 </div>
                 
             </section>
@@ -85,3 +92,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+// featuredJobs?.splice(0,4).map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>)
