@@ -4,6 +4,7 @@ import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 const JobDetails = () => {
 
     const data = useLoaderData()
+    console.log(data)
     const local = () => {
         localStorage.setItem('data', JSON.stringify(data))
         const previousLocal = localStorage.getItem('data')
@@ -26,9 +27,15 @@ const JobDetails = () => {
 
             {/* details */}
             <div className='flex w-3/4 mx-auto my-24'>
-                <div className='w-3/5 pr-8'>
+                <div className='w-3/5 pr-8 space-y-4'>
                     <h1><span className='font-semibold'>Job Description:</span> {data.jobDescription}</h1>
-                    {/* <h1><span className='font-semibold'>Job Description:</span>Job Responsibility:{}</h1> */}
+                    <h1><span className='font-semibold'>Job Responsibility:
+                    <ul className='font-normal list-disc ml-8'>
+                    {
+                        data.jobResponsibilities.map(d =><li>{d}</li>)
+                    }
+                    </ul>
+                    </span>Job Responsibility:{}</h1>
                     <h1><span className='font-semibold'>Edicational Requirements: <br /></span>{data.educationalRequirements}</h1>
                     <h1><span className='font-semibold'>Experiences: </span><br />{data.experiences}</h1>
                 </div>
