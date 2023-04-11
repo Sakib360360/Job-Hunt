@@ -29,8 +29,13 @@ const Home = () => {
 
     const seeAll = () =>{
         
-        setAll('true')
-        console.log(all)
+        if(all==='false'){
+            setAll('true')
+        }else if(all === 'true'){
+            setAll('false')
+        }else{
+            console.log('')
+        }
     }
     // details handler
     
@@ -46,8 +51,8 @@ const Home = () => {
                         <button className='bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>Get Started</button>
                     </div>
                     {/* right side */}
-                    <div className='w-full md:w-3/6'>
-                    <img src="https://i.ibb.co/TWJv5t3/P3-OLGJ1-copy-1.png" alt="P3-OLGJ1-copy-1" border="0" />
+                    <div className='w-full md:w-3/6 ml-12'>
+                    <img src="https://www.pngmart.com/files/15/Smiling-Business-Man-Standing-PNG-Clipart.png" alt="P3-OLGJ1-copy-1" border="0" />
                     </div>
                 </div>
             </div>
@@ -75,13 +80,13 @@ const Home = () => {
                 {/* data */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-3/4 mx-auto mt-24'>
                     {
-                     all === 'true' ?featuredJobs?.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) : featuredJobs?.splice(0,4).map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) 
+                     all === 'true' ?featuredJobs?.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) : featuredJobs?.slice(0,4).map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) 
                     }
                 </div>
                 {/* see all */}
                 <div className='flex flex-col items-center'>
                 {
-                     all === 'true' ? console.log('true') : <button onClick={seeAll} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button> 
+                     all === 'true' ? console.log('true') : <button onClick={()=>seeAll()} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button> 
                     }
                 {/* <button onClick={()=>seeAll()} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button> */}
                 </div>

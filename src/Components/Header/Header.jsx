@@ -15,7 +15,7 @@ const Header = () => {
                     <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='home'>Home</NavLink></li>
                     <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='statistics'>Statistics</NavLink></li>
                     <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='jobs'>Applied Jobs</NavLink></li>
-                    <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='blogs'>Blog</NavLink></li>
+                    <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='blog'>Blog</NavLink></li>
                 </ul>
             </div>
             {/* button */}
