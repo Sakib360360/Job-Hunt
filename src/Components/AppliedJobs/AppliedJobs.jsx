@@ -7,7 +7,7 @@ const AppliedJobs = () => {
     
     console.log(data)
     return (
-        <div>
+        <div className='mx-auto w-3/4 py-12'>
             jb applied{data.jobDescription}
         </div>
     );
