@@ -8,7 +8,7 @@ const Home = () => {
     }
     const [all,setAll] = useState('')
     const detailsHandler = (id)=>{
-        console.log(id,'clicked handle')
+        // console.log(id,'clicked handle')
     }
     // const featuredJobs = useLoaderData()
     const [jobs,setJobs] = useState([])

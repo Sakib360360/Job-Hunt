@@ -1,9 +1,20 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 
 const JobDetails = () => {
+    
     const data = useLoaderData()
-    console.log(data)
+    const local = () =>{
+        localStorage.setItem('data',JSON.stringify(data))
+        const previousLocal = localStorage.getItem('data')
+        // const previousLocalJson = JSON.parse(previousLocal)
+        // const stringifiedObject = JSON.stringify(data)
+        // const newDataJson = JSON.parse(stringifiedObject)
+        // const newDataAll = [...previousLocalJson,newDataJson]
+        // const newDataAllStringified = JSON.stringify(newDataAll)
+        
+        console.log(previousLocal)
+    }
     return (
         <div>
             {/* bannar */}
@@ -34,7 +45,7 @@ const JobDetails = () => {
                         <h1>Address:{data.address}</h1>
                     </div>
                     <div className='flex flex-col items-center'>
-                        <Link to='/applied-job'><button className='mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-8 py-2 text-white rounded'>Apply to the job</button></Link>
+                        <Link to='/applied-job' state={{data:data}}><button onClick={local} className='mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-8 py-2 text-white rounded'>Apply to the job</button></Link>
                     </div>
                     
                 </div>
