@@ -7,7 +7,7 @@ const JobDetails = () => {
     const data = useLoaderData()
     console.log(data)
     const localStorageHandler = () => {
-        addToDb(data.id)
+        addToDb(data)
     }
     return (
         <div>
