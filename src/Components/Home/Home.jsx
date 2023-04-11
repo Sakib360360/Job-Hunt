@@ -15,8 +15,6 @@ const Home = () => {
     const [featuredJobs,setFeaturedJobs] = useState([])
     const [seeAll,setSeeAll] = useState(false)
     
-    
-    console.log(featuredJobs)
     useEffect(()=>{
         fetch('jobCategoryLists.json')
         .then(res=>res.json())
@@ -34,7 +32,6 @@ const Home = () => {
     }
     // details handler
     
-    console.log(featuredJobs)
     return (
         <div>
             <div className='bg-[#7e8ffe18]'>
@@ -94,6 +91,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-// featuredJobs?.splice(0,4).map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>)

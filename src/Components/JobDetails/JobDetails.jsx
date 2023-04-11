@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useLoaderData, useNavigate } from 'react-router-dom';
+import { addToDb } from '../fakeDb';
 
 const JobDetails = () => {
 
     const data = useLoaderData()
     console.log(data)
     const localStorageHandler = () => {
-        console.log('sd')
+        addToDb(data.id)
     }
     return (
         <div>

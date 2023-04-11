@@ -33,8 +33,8 @@ const Statistics = () => {
             <div className='mx-auto py-8'>
             
            <ScatterChart
-      width={400}
-      height={400}
+      width={600}
+      height={600}
       margin={{
         top: 20,
         right: 20,
@@ -43,8 +43,8 @@ const Statistics = () => {
       }}
     >
       <CartesianGrid />
-      <XAxis type="number" dataKey="x" name="Total" unit="No." />
-      <YAxis type="number" dataKey="y" name="Got" unit="marks" />
+      <XAxis type="number" dataKey="x" name="Assignment" unit="No." />
+      <YAxis type="number" dataKey="y" name="Obtained" unit="marks" />
       <Tooltip cursor={{ strokeDasharray: "3 3" }} />
       <Scatter name="A school" data={data} fill="#8884d8">
         {data.map((entry, index) => (
