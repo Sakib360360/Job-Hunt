@@ -6,13 +6,14 @@ const Home = () => {
     const jobApply = () =>{
         console.log('applied')
     }
-    const [all,setAll] = useState('')
+
     const detailsHandler = (id)=>{
         // console.log(id,'clicked handle')
     }
     // const featuredJobs = useLoaderData()
     const [jobs,setJobs] = useState([])
     const [featuredJobs,setFeaturedJobs] = useState([])
+    const [seeAll,setSeeAll] = useState(false)
     
     
     console.log(featuredJobs)
@@ -27,15 +28,9 @@ const Home = () => {
         .then(data=> setFeaturedJobs(data))
     },[])
 
-    const seeAll = () =>{
-        
-        if(all==='false'){
-            setAll('true')
-        }else if(all === 'true'){
-            setAll('false')
-        }else{
-            console.log('')
-        }
+    // seeAll handler
+    const seeAllHandler = () =>{
+        setSeeAll(!seeAll)
     }
     // details handler
     
@@ -80,14 +75,16 @@ const Home = () => {
                 {/* data */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-3/4 mx-auto mt-24'>
                     {
-                     all === 'true' ?featuredJobs?.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) : featuredJobs?.slice(0,4).map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) 
+                        seeAll ? featuredJobs?.map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>) : featuredJobs?.slice(0,4).map(data=><FeaturedJobs detailsHandler={detailsHandler} data={data} key={data.id}></FeaturedJobs>)
                     }
                 </div>
                 {/* see all */}
                 <div className='flex flex-col items-center'>
-                {
-                     all === 'true' ? console.log('true') : <button onClick={()=>seeAll()} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button> 
+                    {
+                        seeAll ? <button onClick={seeAllHandler} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See Less Jobs</button> : <button onClick={seeAllHandler} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button>
                     }
+                
+                    
                 {/* <button onClick={()=>seeAll()} className=' mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>See All Jobs</button> */}
                 </div>
                 
