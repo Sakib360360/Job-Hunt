@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const FeaturedJobs = (props) => {
-    
-    const { imageUrl, title, companyName,id, jobType, type, location, salary } = props.data
-    const {detailsHandler} = props
+
+    const { imageUrl, title, companyName, id, jobType, type, location, salary } = props.data
+    const { detailsHandler } = props
     return (
         <div>
             <div className='p-8 border border-gray-500 rounded'>
@@ -30,7 +30,7 @@ const FeaturedJobs = (props) => {
                             Salary:{salary}</p>
                     </div>
                 </div>
-                <Link to={`../job-details/${id}`}><button onClick={()=>detailsHandler(id)} className='mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>View Details</button></Link>
+                <Link to={`../job-details/${id}`}><button onClick={() => detailsHandler(id)} className='mt-6 bg-gradient-to-r from-[#7E90FE] to-[#9873FF] px-3 py-2 text-white rounded'>View Details</button></Link>
             </div>
         </div>
     );
