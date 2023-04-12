@@ -11,6 +11,8 @@
     "phone": "(123) 456-7890",
     "email": "jobs@abcinc.com",
     "address": "123 Main Street, San Francisco, CA",
+    "jobType": "On-site",
+      "type":"full-time",
     "title": "Software Engineer",
     "imageUrl": "https://iili.io/Hkeb8ap.png",
       "location": "San Francisco, CA",
