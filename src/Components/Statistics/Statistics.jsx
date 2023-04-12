@@ -28,13 +28,21 @@ const Statistics = () => {
       ];
       const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
     return (
-        <div className='w-3/6 mx-auto'>
+        <div>
+          <div className='w-full  '>
+          <div className='bg-[#7e8ffe18] relative'>
+                <h1 className='text-center text-3xl font-bold py-28'>Statistics</h1>
+                <img className='absolute bottom-0 left-0' src="https://i.ibb.co/28zqbPc/Vector.png" alt="Vector" border="0" />
+                <img className='absolute -top-24 right-0' src="https://i.ibb.co/jV022Jb/Vector-1.png" alt="Vector-1" border="0" />
+            </div>
+          </div>
+          <div className='w-3/6 mx-auto'>
             <h1 className='text-center font-bold text-3xl py-8'>Average Assignment Marks:</h1>
             <div className='mx-auto py-8'>
             
            <ScatterChart
-      width={600}
-      height={600}
+      width={300}
+      height={300}
       margin={{
         top: 20,
         right: 20,
@@ -53,6 +61,7 @@ const Statistics = () => {
       </Scatter>
     </ScatterChart>
             </div>
+        </div>
         </div>
     );
 };

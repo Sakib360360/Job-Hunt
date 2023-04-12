@@ -14,7 +14,7 @@ const Header = () => {
                 <ul className='flex '>
                     <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='home' className={({ isActive }) =>isActive ? "text-blue-600" : ""}>Home</NavLink></li>
                     <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='statistics' className={({ isActive }) =>isActive ? "text-blue-600" : ""}>Statistics</NavLink></li>
-                    <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='jobs' className={({ isActive }) =>isActive ? "text-blue-600" : ""}>Applied Jobs</NavLink></li>
+                    <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='applied-job' className={({ isActive }) =>isActive ? "text-blue-600" : ""}>Applied Jobs</NavLink></li>
                     <li className='px-2 font-semibold text-gray-600 hover:text-[#7E90FE]'><NavLink to='blog' className={({ isActive }) =>isActive ? "text-blue-600" : ""}>Blog</NavLink></li>
                 </ul>
             </div>
