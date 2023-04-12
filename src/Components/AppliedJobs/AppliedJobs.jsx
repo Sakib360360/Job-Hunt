@@ -49,8 +49,11 @@ const AppliedJobs = () => {
                         cl ? <>{
                             storedDataf?.map(d => <div className='flex flex-col md:flex-row p-8 my-8 justify-between space-y-8 border-gray-500 rounded border'>
                                 {/* left */}
-                                <div className='flex flex-col md:flex-row'>
-                                    <img className='bg-gray-400 w-[100px] h-[70px] mr-8 my-auto' src={d.imageUrl} alt="" />
+                                <div className='flex flex-col md:flex-row '>
+                                    <div className='bg-gray-400 md:mx-auto my-auto w-[100px] h-[70px] md:mr-8'>
+                                        <img className=' px-4 pt-6 ' src={d.imageUrl} alt="" />
+                                    </div>
+                                    
                                     <div>
                                         <h1 className='text-1xl font-semibold'>{d.title}</h1>
                                         <p className='text-sm text-gray-600 my-1'>{d.companyName}</p>

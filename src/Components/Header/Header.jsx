@@ -12,7 +12,7 @@ const Header = () => {
             <div className='flex justify-between  w-3/4 mx-auto py-6 bg-transparent'>
                 {/* logo */}
                 <div>
-                    <Link to='home'><h1 className='text-3xl font-bold animate-bounce text-[#7E90FE] '>JobHunt</h1></Link>
+                    <Link to='home'><h1 className='text-3xl font-bold  text-[#7E90FE] '>JobHunt</h1></Link>
                 </div>
                 {/* menu items */}
                 <div>
